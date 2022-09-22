@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='script.js' defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="search-div">
+        <h1 class="title">Weather Forecast</h1>
+        <img class="logo" src="images/logo.png">
+        <input id="city" type="text" placeholder="Search your city">
+        <div class="option">
+        <label for=celsius">°C</label>
+        <input type="radio" id="celsius" name="unit" value="C" checked>
+        <label for="fahrenheit">°F</label>
+        <input type="radio" id="fahrnheit" name="unit" value="F">
+        </div>
+        <button class="btn" id="search">Search</button>
+    </div>
+    <div class="result-div">
+        <h1 class="title"></h1>
+        <div id="icon-div"></div>
+        <p id="description"></p>
+        <div class="temp-div">
+            <div class="number">Temp <span id='temp'></span></div>
+            <div class="number">Max <span id='max'></span></div>
+            <div class="number">Min <span id='min'></span></div>
+            <div class="number">Humidity <span id='humid'></span></div>
+        </div>
+        <button class="btn" id="back">Back</button>
+    </div>
+    <div class="failed-div">
+        <h1 class="title">Weather Forecast</h1>
+        <img class="logo" src="images/sorry.png">
+        <p class="message">Sorry, I couldn't find the city. Can you check the city name?</p>
+        <button class="btn" id="back">Back</button>
+    </div>  
+
+</body>
+</html>
