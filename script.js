@@ -15,7 +15,7 @@ if (celsius){
     units = 'imperial'
     mark  ='°F'
 }
-const url = `http://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=${key}&units=${units}`
+const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=${key}&units=${units}`
 const response = await fetch(url,{mode:'cors'})   
 response.json().then(function(response) {
     try {
